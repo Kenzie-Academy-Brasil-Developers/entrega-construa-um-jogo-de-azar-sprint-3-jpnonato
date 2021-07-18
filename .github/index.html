@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal-win modal esconder-itens" id="victory" >
+     <section>
+        <h2> you win!</h2>
+        <button class="button-playagain" id="playagain-win">Jogar novamente</button>
+     </section>
+    </div>
+    <div class="modal-lose modal esconder-itens" id = "lose">
+      <section>
+        <h2> you lose!</h2>
+        <button class="button-playagain" id = "playagain-lose">Jogar novamente</button>
+      </section>
+    </div>
+    <div class="modal-empate modal esconder-itens" id= "draw">
+      <section> 
+        <h2> You drew!</h2>
+        <button class="button-playagain" id= "playagain-draw">Jogar novamente</button>
+      </section>   
+    </div>
+    <div class="players">
+        <section id="you">
+            <h1>Player</h1>
+            <ul id="lista-opcoes">
+             <li classe="item"><img src="img/sinal-de-vitoria.png" alt="Tesoura" id="tesoura"></li>
+             <li classe="item" ><img src="img/mao-aberta.png" alt="Papel" id="papel"></li>
+             <li classe="item" ><img src="img/punho-fechado.png" alt="Pedra" id="pedra"></li>
+            </ul>
+        </section>
+        <section id ="rival">            
+            <ul>
+                <li classe="item"><img src="img/sinal-de-vitoria.png" alt="Tesoura" id="tesourapc" class="esconder-itens"></li>
+                <li classe="item" ><img src="img/mao-aberta.png" alt="Papel" id="papelpc" class="esconder-itens"></li>
+                <li classe="item" ><img src="img/punho-fechado.png" alt="Pedra" id="pedrapc" class="esconder-itens"></li>
+            </ul>
+            <h2>Computer</h2>   
+        </section>
+    </div>
+    <section class="section-button-iniciar">
+        <button id="button-iniciar"> Iniciar jogo</button>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

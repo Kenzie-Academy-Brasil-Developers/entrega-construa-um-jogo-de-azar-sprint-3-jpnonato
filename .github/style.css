@@ -1,0 +1,255 @@
+body{
+    background-color: rgb(106, 180, 245);
+    font-family: arial;
+}
+
+body #you{
+    margin:10px 10px 0 10px;
+    border-bottom: yellow solid;
+}
+
+body #rival{
+    margin:0px 10px 10px 10px;
+    border-top: yellow solid;
+   
+}
+
+body #you, #rival{
+    background-color: rgb(212, 209, 206);
+    text-align: center;
+}
+
+.players{
+    display: flex;
+    flex-direction: column;
+}
+
+#lista-opcoes{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    display:none;
+    padding-left: 15px;
+    
+}
+
+#button-iniciar{
+    margin-top: 15px;
+    padding: 10px;
+    border: lightgrey;
+    border-radius: 5px;
+    background-color: rgb(2, 253, 2);
+    color: rgb(241, 133, 10);
+    font-size: 14px;
+}
+
+.section-button-iniciar{
+  text-align: center;
+}
+
+#tesoura{
+    width: 50px;
+    background-color: rgb(248, 232, 10);
+    margin: 15px;
+    border:rgb(212, 209, 206) solid 2px;
+    transition: 0.2s;
+    
+}
+
+#pedra{
+    width: 50px;
+    background-color: rgb(248, 232, 10);
+    margin: 15px;
+    border:rgb(212, 209, 206) solid 2px;
+    transition: 0.2s;
+}
+
+#papel{
+    width: 50px;
+    background-color: rgb(248, 232, 10);
+    margin: 15px;
+    border:rgb(212, 209, 206) solid 2px;
+    transition: 0.2s;  
+}
+
+#lista-opcoes img:hover{
+    box-shadow: blue 0px 0px 10px 2px;
+    background-color: rgb(82, 255, 2);
+    border: white solid 2px;
+    color: rgb(81, 255, 0);
+    cursor: pointer;
+    transition:  0.3s;
+}
+
+
+.esconder-itens{
+    display: none;
+}
+
+.opcao-selecionada{
+    margin-left: 20%;
+}
+
+#rival ul{
+    list-style: none;
+}
+
+#tesourapc{
+    width: 50px;
+    background-color: rgb(248, 232, 10);
+    margin: 15px;
+    border:rgb(212, 209, 206) solid 2px;
+    transition: 0.2s;
+}
+
+#papelpc{
+    width: 50px;
+    background-color: rgb(248, 232, 10);
+    margin: 15px;
+    border:rgb(212, 209, 206) solid 2px;
+    transition: 0.2s;
+}
+
+#pedrapc {
+    width: 50px;
+    background-color: rgb(248, 232, 10);
+    margin: 15px;
+    border:rgb(212, 209, 206) solid 2px;
+    transition: 0.2s;
+}
+
+.modal-win section{
+    position: relative;  
+}
+
+.modal{
+    background-color: rgba(211, 211, 211,);
+    box-shadow: rgb(211, 211, 211) 0 0 100px 50px;
+    background-color: rgb(48, 80, 80, 0.5);
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.modal section{
+    width: 80%;
+    margin: auto;
+}
+
+.modal-win h2{
+    font-size: 75px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: rgb(255, 217, 0);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal-lose h2{
+    font-size: 75px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal-empate h2{
+    font-size: 75px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color:rgb(80, 7, 250);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#you h1{
+    margin-bottom: 40px;
+}
+
+#rival h2{
+    margin-top: 40px;
+}
+
+.ajuste{
+    position: absolute;
+    bottom: 72%;
+}
+
+.button-playagain{
+    margin-bottom: 70px;
+    padding: 12px;
+    border: rgb(48, 80, 80, 0.1) solid 2px;
+    border-radius: 5px;
+    background-color: tomato;
+    color: white;
+    opacity: 0.7;
+}
+
+.modal section{
+    text-align: center;
+}
+
+.button-playagain:hover{
+    background-color: red;
+    border: white solid 2px;
+    cursor: pointer;
+    transition:  0.5s;
+}
+
+#button-iniciar:hover{
+    background-color: rgb(241, 133, 10);
+    border: white solid 2px;
+    color: rgb(81, 255, 0);
+    cursor: pointer;
+    transition:  0.3s;
+}
+
+@media screen and (min-width: 768px) {
+    #tesoura, #papel, #pedra{
+        width: 80px;
+    }
+
+    #tesourapc, #papelpc, #pedrapc{
+        width: 80px;
+    }
+
+    body #you{
+        border-bottom: yellow solid;
+        margin: auto;
+    }
+    
+    body #rival{
+        border-top: yellow solid;
+        margin: auto;
+    }
+
+    .ajuste {
+        margin-left: 17px;
+        bottom: 75%;
+    }
+    
+    body #you, #rival{
+        background-color: rgb(212, 209, 206);
+        text-align: center;
+        width: 60%;
+        max-width: 685px;   
+    }
+
+    #you h1{
+        margin-bottom: 75px;
+    }
+    
+    #rival h2{
+        margin-top: 75px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) and (min-height: 515px) {
+    .ajuste{
+        position: absolute;
+        bottom: 81%;
+    }
+}

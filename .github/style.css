@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 
 body{
@@ -11,12 +12,20 @@ body #you{
     margin:10px 10px 0 10px;
     border-bottom: yellow solid;
     border-radius: 10px 10px 0 0;
+    font-family: 'PT Serif', serif;
+    color: rgb(55, 55, 238);
+    font-size: 30px;
+    font-style: italic;
 }
 
 body #rival{
     margin:0px 10px 10px 10px;
     border-top: yellow solid;
     border-radius: 0px 0px 10px 10px;
+    font-family: 'PT Serif', serif;
+    color: brown;
+    font-size: 30px;
+    font-style: italic;
 }
 
 body #you, #rival{
@@ -35,6 +44,7 @@ body #you, #rival{
     justify-content: center;
     display:none;
     padding-left: 15px;
+    position: relative;
     
 }
 
@@ -149,6 +159,7 @@ body #you, #rival{
     color: rgb(255, 217, 0);
     text-transform: uppercase;
     text-align: center;
+    opacity: 0.7;
 }
 
 .modal-lose h2{
@@ -158,6 +169,7 @@ body #you, #rival{
     color: red;
     text-transform: uppercase;
     text-align: center;
+    opacity: 0.7;
 }
 
 .modal-empate h2{
@@ -167,6 +179,7 @@ body #you, #rival{
     color:rgb(80, 7, 250);
     text-transform: uppercase;
     text-align: center;
+    opacity: 0.7;
 }
 
 #you h1{
@@ -179,7 +192,13 @@ body #you, #rival{
 
 .ajuste{
     position: absolute;
-    bottom: 72%;
+    bottom: 100%;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    font-style: italic;
+    color: brown;
+    font-size: 18px;
+
 }
 
 .button-playagain{
@@ -238,7 +257,7 @@ body #you, #rival{
 
     .ajuste {
         margin-left: 17px;
-        bottom: 65%;
+        bottom: 115%;
     }
     
     body #you, #rival{
@@ -261,6 +280,6 @@ body #you, #rival{
 @media screen and (min-width: 1024px) and (min-height: 515px) {
     .ajuste{
         position: absolute;
-        bottom: 75%;
+        bottom: 72%;
     }
 }

@@ -22,14 +22,14 @@ let escolhapc = opcoes[(Math.random() * opcoes.length) | 0]
 }
 
 
-let it = document.getElementById("lista-opcoes")
+let listaopcoes = document.getElementById("lista-opcoes")
 let criarli = document.createElement("li")
-let escolha = it.appendChild(criarli)
+let escolha = listaopcoes.appendChild(criarli)
 let content = document.createTextNode("Faça sua escolha: ")
 
 let botao = document.getElementById ("button-iniciar")
 botao.addEventListener("click", function(){
-     it.style.display = "flex"
+     listaopcoes.style.display = "flex"
      escolha.appendChild(content)
      escolha.classList.add("ajuste")
 })
@@ -46,6 +46,7 @@ opcaotesoura.addEventListener("click", function(){
     opcaopedra.classList.add("esconder-itens")
     escolha.classList.add("esconder-itens")
     opcaotesoura.style.background = "rgb(82, 255, 2)"
+    listaopcoes.style.position = "static"
     let escolhapc = computer()
     if(escolhapc === 'papel'){
         modalwin.classList.remove("esconder-itens")
@@ -61,6 +62,7 @@ opcaopapel.addEventListener("click", function(){
     opcaopedra.classList.add("esconder-itens")
     escolha.classList.add("esconder-itens")
     opcaopapel.style.background = "rgb(82, 255, 2)"
+    listaopcoes.style.position = "static"
     let escolhapc = computer()
     if(escolhapc === 'papel'){
         modaldraw.classList.remove("esconder-itens")
@@ -76,6 +78,7 @@ opcaopedra.addEventListener("click", function(){
     opcaotesoura.classList.add("esconder-itens")
     escolha.classList.add("esconder-itens")
     opcaopedra.style.background = "rgb(82, 255, 2)"
+    listaopcoes.style.position = "static"
     let escolhapc = computer()
     if(escolhapc === 'papel'){
         modallose.classList.remove("esconder-itens")

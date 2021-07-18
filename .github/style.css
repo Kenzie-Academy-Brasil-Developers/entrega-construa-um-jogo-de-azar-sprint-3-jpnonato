@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+
 body{
     background-color: rgb(106, 180, 245);
     font-family: arial;
+    margin-top: 20px;
 }
 
 body #you{
     margin:10px 10px 0 10px;
     border-bottom: yellow solid;
+    border-radius: 10px 10px 0 0;
 }
 
 body #rival{
     margin:0px 10px 10px 10px;
     border-top: yellow solid;
-   
+    border-radius: 0px 0px 10px 10px;
 }
 
 body #you, #rival{
@@ -183,7 +188,7 @@ body #you, #rival{
     border: rgb(48, 80, 80, 0.1) solid 2px;
     border-radius: 5px;
     background-color: tomato;
-    color: white;
+    color: lightgrey;
     opacity: 0.7;
 }
 
@@ -194,7 +199,9 @@ body #you, #rival{
 .button-playagain:hover{
     background-color: red;
     border: white solid 2px;
+    color: white;
     cursor: pointer;
+    opacity: 0.8;
     transition:  0.5s;
 }
 
@@ -207,6 +214,10 @@ body #you, #rival{
 }
 
 @media screen and (min-width: 768px) {
+    body {
+        margin-top: 35px;
+    }
+
     #tesoura, #papel, #pedra{
         width: 80px;
     }
@@ -227,7 +238,7 @@ body #you, #rival{
 
     .ajuste {
         margin-left: 17px;
-        bottom: 75%;
+        bottom: 65%;
     }
     
     body #you, #rival{
@@ -250,6 +261,6 @@ body #you, #rival{
 @media screen and (min-width: 1024px) and (min-height: 515px) {
     .ajuste{
         position: absolute;
-        bottom: 81%;
+        bottom: 75%;
     }
 }

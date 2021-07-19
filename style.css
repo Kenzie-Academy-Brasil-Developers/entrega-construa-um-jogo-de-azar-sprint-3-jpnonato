@@ -281,5 +281,6 @@ body #you, #rival{
     .ajuste{
         position: absolute;
         bottom: 72%;
+        top: -25px;
     }
 }
